@@ -10,31 +10,32 @@
           </div>
           
         </div>
-        <div class="column column-image">
-          <figure>
+        <div class="column">
+          <figure class="column-image">
             <img src="/img/characters/eula/eula.png" alt="">
           </figure>
         </div>
       </div>
     </header>
-    <section class="world" :style="{'background-image':'url(img/discover-teyvat.png)'}">
+      <section class="world" :style="{'background-image':'url(img/discover-teyvat.png)'}">
       <h1>DISCOVER TEYVAT</h1>
       <div class="columns">
         <div class="column is-half column-txt">
           <p>Lorem fistrum la caidita la caidita te va a hasé pupitaa sexuarl se calle ustée benemeritaar. A gramenawer no puedor diodeno torpedo. Tiene musho peligro de la pradera benemeritaar tiene musho peligro ese que llega tiene musho peligro ese pedazo de se calle ustée a wan papaar papaar tiene musho peligro. Diodeno mamaar la caidita ahorarr benemeritaar por la gloria de mi madre pupita. Llevame al sircoo qué dise usteer ese hombree se calle ustée. Papaar papaar mamaar ese que llega quietooor apetecan está la cosa muy malar. Fistro va usté muy cargadoo por la gloria de mi madre quietooor ese hombree. A peich te voy a borrar el cerito jarl caballo blanco caballo negroorl benemeritaar por la gloria de mi madre me cago en tus muelas tiene musho peligro de la pradera fistro no te digo trigo por no llamarte Rodrigor. Por la gloria de mi madre condemor la caidita te va a hasé pupitaa de la pradera mamaar papaar papaar.</p>
         </div>
-        <div class="column column-monds">
-          <figure>
+        <div class="column">
+          <figure class="column-monds">
             <img src="img/Emblema_Mondstadt.png" width="200" height="200" alt="">
           </figure>
         </div>
-        <div class="column column-liyue">
-          <figure>
+        <div class="column">
+          <figure class="column-liyue">
             <img src="img/Emblema_Liyue.png" width="200" height="200" alt="">
           </figure>
         </div>
       </div>
     </section>
+    
     <section class="characters" :style="{'background-image':'url(img/bg-liyue.jpg)'}">
     <h1>FORM YOUR TEAM</h1>
     <div class="columns">
@@ -78,9 +79,14 @@ header{
   height:100vh;
   background-color:lightblue;
 }
+.column-image{
+  height: 100vh;
+  width: auto;
+}
 .column-image img{
-  max-height: fit-content;
-  max-width: fit-content;
+  height:100%;
+  width: 100%;
+  object-fit: contain;
 }
 .world{
   height: 100vh;
@@ -138,5 +144,12 @@ header{
 .column-left, .column-right{
   display: flex;
   align-items: flex-end;
+}
+
+
+@media (max-width: 480px){
+  img{
+    display:none;
+  }
 }
 </style>
