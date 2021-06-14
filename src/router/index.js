@@ -5,6 +5,7 @@ import Characters from '../views/Characters.vue'
 import World from '../views/World.vue'
 import Builds from '../views/Builds.vue'
 import CharacterInfo from '../views/Character.vue'
+import CreateBuild from '../views/newBuild.vue'
 
 
 Vue.use(VueRouter)
@@ -41,8 +42,12 @@ const routes = [
     path: '/builds',
     name: 'Builds',
     component: Builds
+  },
+  {
+  path: '/builds/newBuild',
+  name: CreateBuild,
+  component: CreateBuild
   }
-  
 ]
 
 const router = new VueRouter({

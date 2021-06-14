@@ -1,18 +1,20 @@
 <template>
 <div class="container is-fullhd">
-  <!-- <div class="columns btn-container">
+  <div class="columns btn-container">
     <div class="column btn-all">
-      <button class="button" @click="currentRarity = null">Todos</button>
+      <button class="button" @click="currentRarity = null" :class="{ active: currentRarity === null }">Todos</button>
     </div>
-    <div class="column btn-5star" @click="currentRarity = 5">
-      <button class="button">5 &#9733;</button>
+    <div class="column btn-5star" >
+      <button class="button" @click="currentRarity = 5" :class="{ active: currentRarity === 5 }">
+        5 &#9733;
+        </button>
     </div>
-    <div class="column btn-4star" @click="currentRarity = 4">
-      <button class="button"> 
+    <div class="column btn-4star">
+      <button class="button" @click="currentRarity = 4" :class="{ active: currentRarity === 4 }"> 
       4 &#9733;
       </button>
     </div>
-  </div> -->
+  </div>
 
   <div class="element-container">
     <button class="button is-large" @click="currentElement = null" :class="{ active: currentElement === null }">
@@ -81,7 +83,7 @@ export default {
   },
   computed: {
     filterElement(){
-      if (this.currentElement === null) return this.characters
+      if (this.currentElement === null && this.currentRarity === null) return this.characters
       return this.characters.filter(
         (item) => item.element === this.currentElement)
     }

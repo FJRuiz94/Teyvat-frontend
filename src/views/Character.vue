@@ -76,14 +76,15 @@ export default {
     return {
       name: "",
       img: "",
-      sentence: ""
+      sentence: "",
+      element: ""
     }
   },
   mounted(){
       const characterName = this.$route.params.name
       
       this.$api.characters.getOne(characterName).then(response => this.name = response)
-      
+      if(this.element === 'Pyro')document.body.style.backgroundColor = "red";
   },
 }
 </script>
