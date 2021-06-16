@@ -20,7 +20,8 @@ class Build {
         //       Authorization: `Bearer ${token}`,
         //     },
         // }
-        const config ={}
+
+        const config = {}
     
         const response = await this.axios.post("builds/newBuild", buildData, config)
         

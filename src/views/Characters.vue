@@ -1,19 +1,14 @@
 <template>
+
+<div class="charactersContainer" :style="{'background-image':'url(img/bg-characters.jpg)', 'background-size': 'cover','background-color': 'rgba(0, 0, 0, 0.116)'}">
 <div class="container is-fullhd">
-  <div class="columns btn-container">
-    <div class="column btn-all">
-      <button class="button" @click="currentRarity = null" :class="{ active: currentRarity === null }">Todos</button>
-    </div>
-    <div class="column btn-5star" >
+  <div class="btn-container">
       <button class="button" @click="currentRarity = 5" :class="{ active: currentRarity === 5 }">
         5 &#9733;
         </button>
-    </div>
-    <div class="column btn-4star">
       <button class="button" @click="currentRarity = 4" :class="{ active: currentRarity === 4 }"> 
       4 &#9733;
       </button>
-    </div>
   </div>
 
   <div class="element-container">
@@ -47,7 +42,7 @@
       />
     </div>
 </div>
-    
+</div> 
 </template>
 
 <script>
@@ -83,7 +78,7 @@ export default {
   },
   computed: {
     filterElement(){
-      if (this.currentElement === null && this.currentRarity === null) return this.characters
+      if (this.currentElement === null) return this.characters
       return this.characters.filter(
         (item) => item.element === this.currentElement)
     }
@@ -99,11 +94,18 @@ export default {
 </script>
 
 <style scoped>
+.charactersContainer{
+  height: 150vh;
+}
 p{
   color: white;
 }
 .btn-container{
-  margin-top:5vh;
+  display: flex;
+  align-items: center;
+}
+.btn-container button{
+  margin:5px;
 }
 /* .btn-5star{
   text-align: right;
@@ -126,5 +128,26 @@ p{
 .element{
   height:50px;
   width:auto;
+}
+@media(max-width: 480px){
+.btn-container{
+  margin-top:0;
+}
+.columns{
+  margin-left:0;
+  margin-right: 0;
+  margin-top: 0;
+  padding: 15px;
+  }
+  .column{
+    display: inline-block;
+    padding: 0;
+  }
+  .button{
+    font-size:1.2rem;
+  }
+  .element{
+    height:35px;
+  }
 }
 </style>

@@ -5,7 +5,7 @@ import store from './store'
 
 import charactersAPI from './plugins/api/index'
 
-Vue.use(charactersAPI, {baseURL: 'http://localhost:3000/'})
+Vue.use(charactersAPI, {baseURL: 'https://teyvat-project-api.herokuapp.com'})
 
 Vue.config.productionTip = false
 

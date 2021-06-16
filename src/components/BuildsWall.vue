@@ -1,5 +1,5 @@
 <template>
-  <div class="column">
+  <div class="build-container" :style="{'background-color':'#0000004d'}">
     <CharacterBuild
       v-for="item in builds"
       :value="item"
@@ -36,6 +36,5 @@ export default {
 <style>
 .build-container{
   border: 1px solid black;
-  background-color: grey;
 }
 </style>

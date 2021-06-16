@@ -1,5 +1,5 @@
 <template>
-<div>
+<div :class="elementType">
   <header>
     <div class="columns">
       <div class="column">
@@ -77,15 +77,16 @@ export default {
       name: "",
       img: "",
       sentence: "",
-      element: ""
+      element: "",
+      elementType: 'dynamic-type'
     }
   },
   mounted(){
       const characterName = this.$route.params.name
       
       this.$api.characters.getOne(characterName).then(response => this.name = response)
-      if(this.element === 'Pyro')document.body.style.backgroundColor = "red";
-  },
+      
+    },
 }
 </script>
 
@@ -94,10 +95,22 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 
 
+.dynamic-type{
+  background-color:rgba(0, 0, 0, 0.11);
+}
+
+.fuego{
+background-color: red;
+}
+
+.agua{
+  background-color: blue;
+}
+
 header{
   height:100vh;
-  background-color:rgba(0, 0, 0, 0.233);
 }
+
 .charName{
   margin-top: 5vh;
   margin-left: 5vw;
@@ -114,14 +127,14 @@ header{
 h1{
   font-family: 'Crimson Text', serif;
   font-size: 5rem;
-  color:white;
+  color:black;
 }
 h4{
   font-size:1.5rem;
+  color:black;
 }
 .lore{
   height:90vh;
-  background-color:rgba(0, 0, 0, 0.233);
 }
 .excerpt h2{
   font-family: 'Crimson Text', serif;
@@ -130,6 +143,7 @@ h4{
   padding-left: 20%;
   padding-right: 20%;
   font-style: italic;
+  color: black;
 }
 .loreDesc{
   padding-left: 5vw;
@@ -137,6 +151,7 @@ h4{
 }
 .loreDesc p{
   font-size: 1.4rem;
+  color: black;
 }
 .loreImg{
   height: 70vh;
@@ -175,5 +190,43 @@ h4{
 .abilityDesc{
   margin-left: auto;
   margin-right: auto;
+  color: black;
+}
+
+@media(max-width: 480px){
+  .header{
+    height:90vh;
+  }
+  .charImg{
+    height: 50vh;
+  }
+  .columns{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+  h4{
+    font-size: 1rem;
+    padding: 5px;
+  }
+  .excerpt h2{
+    font-size: 1rem;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .loreDesc{
+    padding-top: 0;
+    padding-left: 0;
+  }
+  .loreDesc p{
+    font-size:0.8rem;
+    padding: 5%;
+  }
+  .loreImg{
+    display: none;
+  }
+  .atk, .skill, .burst{
+    padding:5vh;
+  }
 }
 </style>
