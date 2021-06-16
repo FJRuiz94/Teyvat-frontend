@@ -61,7 +61,7 @@
 
         Using the power of the Four Winds, Barbatos blew away the snow and ice from the land and reformed the geography of Mondstadt completely. After that, he established a new city of Mondstadt where it still stands to this day.
 
-        Rather than rule as Decarabian did, Barbatos instead chose to fully embrace the ideal of freedom and left Mondstadt to be governed by the people.
+        Rather than rule as Decarabian did, Barbatos instead chose to fully embrace the ideal of freedom and left Mondstadt to be governed by the people
         </p>
       </div>
     </section>
