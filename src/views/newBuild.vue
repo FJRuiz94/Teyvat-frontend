@@ -1,17 +1,44 @@
 <template>
-  <div class="new-build">
+  <div class="new-build" :style="{'background-image':'url(img/genshinFondo.jpg)', 'background-size': 'cover'}">
     <div>
           <input class="input" type="text" placeholder="What's your build name?" v-model="title">
-          <div class="columns">
+          <div class="columns characterFields">
             <div class="column is-2">
               <label>Main Character</label>
               <div class="select is-normal">
                 <select v-model="main">
-                  <option>Amber</option>
-                  <option>Diluc</option>
-                  <option>Albedo</option>
-                  <option>Xiao</option>
-                  <option>Rosaria</option>
+                  <option value="Amber">Amber</option>
+                  <option value="Diluc">Diluc</option>
+                  <option value="Albedo">Albedo</option>
+                  <option value="Barbara">Barbara</option>
+                  <option value="Beidou">Beidou</option>
+                  <option value="Bennett">Bennett</option>
+                  <option value="Chongyun">Chongyun</option>
+                  <option value="Diona">Diona</option>
+                  <option value="Eula">Eula</option>
+                  <option value="Fischl">Fischl</option>
+                  <option value="Ganyu">Ganyu</option>
+                  <option value="HuTao">HuTao</option>
+                  <option value="Jean">Jean</option>
+                  <option value="Kaeya">Kaeya</option>
+                  <option value="Keqing">Keqing</option>
+                  <option value="Klee">Klee</option>
+                  <option value="Lisa">Lisa</option>
+                  <option value="Mona">Mona</option>
+                  <option value="Ningguang">Ningguang</option>
+                  <option value="Noelle">Noelle</option>
+                  <option value="Qiqi">Qiqi</option>
+                  <option value="Razor">Razor</option>
+                  <option value="Rosaria">Rosaria</option>
+                  <option value="Sucrose">Sucrose</option>
+                  <option value="Tartaglia">Tartaglia</option>
+                  <option value="Venti">Venti</option>
+                  <option value="Xiangling">Xiangling</option>
+                  <option value="Xiao">Xiao</option>
+                  <option value="Xingqiu">Xingqiu</option>
+                  <option value="Xinyan">Xinyan</option>
+                  <option value="Yanfei">Yanfei</option>
+                  <option value="Zhongli">Zhongli</option>
                 </select>
               </div>
             </div>
@@ -19,12 +46,38 @@
               <label>Member 1</label>
               <div class="select is-normal">
                 <select v-model="member1">
-                  <option>Fischl</option>
-                  <option>Bennett</option>
-                  <option>Diona</option>
-                  <option>Beidou</option>
-                  <option>Jean</option>
-                  <option>Ganyu</option>
+                  <option value="Amber">Amber</option>
+                  <option value="Diluc">Diluc</option>
+                  <option value="Albedo">Albedo</option>
+                  <option value="Barbara">Barbara</option>
+                  <option value="Beidou">Beidou</option>
+                  <option value="Bennett">Bennett</option>
+                  <option value="Chongyun">Chongyun</option>
+                  <option value="Diona">Diona</option>
+                  <option value="Eula">Eula</option>
+                  <option value="Fischl">Fischl</option>
+                  <option value="Ganyu">Ganyu</option>
+                  <option value="HuTao">HuTao</option>
+                  <option value="Jean">Jean</option>
+                  <option value="Kaeya">Kaeya</option>
+                  <option value="Keqing">Keqing</option>
+                  <option value="Klee">Klee</option>
+                  <option value="Lisa">Lisa</option>
+                  <option value="Mona">Mona</option>
+                  <option value="Ningguang">Ningguang</option>
+                  <option value="Noelle">Noelle</option>
+                  <option value="Qiqi">Qiqi</option>
+                  <option value="Razor">Razor</option>
+                  <option value="Rosaria">Rosaria</option>
+                  <option value="Sucrose">Sucrose</option>
+                  <option value="Tartaglia">Tartaglia</option>
+                  <option value="Venti">Venti</option>
+                  <option value="Xiangling">Xiangling</option>
+                  <option value="Xiao">Xiao</option>
+                  <option value="Xingqiu">Xingqiu</option>
+                  <option value="Xinyan">Xinyan</option>
+                  <option value="Yanfei">Yanfei</option>
+                  <option value="Zhongli">Zhongli</option>
                 </select>
               </div>
             </div>
@@ -32,12 +85,38 @@
               <label>Member 2</label>
               <div class="select is-normal">
                 <select v-model="member2">
-                  <option>Fischl</option>
-                  <option>Bennett</option>
-                  <option>Diona</option>
-                  <option>Beidou</option>
-                  <option>Jean</option>
-                  <option>Ganyu</option>
+                  <option value="Amber">Amber</option>
+                  <option value="Diluc">Diluc</option>
+                  <option value="Albedo">Albedo</option>
+                  <option value="Barbara">Barbara</option>
+                  <option value="Beidou">Beidou</option>
+                  <option value="Bennett">Bennett</option>
+                  <option value="Chongyun">Chongyun</option>
+                  <option value="Diona">Diona</option>
+                  <option value="Eula">Eula</option>
+                  <option value="Fischl">Fischl</option>
+                  <option value="Ganyu">Ganyu</option>
+                  <option value="HuTao">HuTao</option>
+                  <option value="Jean">Jean</option>
+                  <option value="Kaeya">Kaeya</option>
+                  <option value="Keqing">Keqing</option>
+                  <option value="Klee">Klee</option>
+                  <option value="Lisa">Lisa</option>
+                  <option value="Mona">Mona</option>
+                  <option value="Ningguang">Ningguang</option>
+                  <option value="Noelle">Noelle</option>
+                  <option value="Qiqi">Qiqi</option>
+                  <option value="Razor">Razor</option>
+                  <option value="Rosaria">Rosaria</option>
+                  <option value="Sucrose">Sucrose</option>
+                  <option value="Tartaglia">Tartaglia</option>
+                  <option value="Venti">Venti</option>
+                  <option value="Xiangling">Xiangling</option>
+                  <option value="Xiao">Xiao</option>
+                  <option value="Xingqiu">Xingqiu</option>
+                  <option value="Xinyan">Xinyan</option>
+                  <option value="Yanfei">Yanfei</option>
+                  <option value="Zhongli">Zhongli</option>
                 </select>
               </div>
             </div>
@@ -45,27 +124,52 @@
               <label>Member 3</label>
               <div class="select is-normal">
                 <select v-model="member3">
-                  <option>Fischl</option>
-                  <option>Bennett</option>
-                  <option>Diona</option>
-                  <option>Beidou</option>
-                  <option>Jean</option>
-                  <option>Ganyu</option>
+                  <option value="Amber">Amber</option>
+                  <option value="Diluc">Diluc</option>
+                  <option value="Albedo">Albedo</option>
+                  <option value="Barbara">Barbara</option>
+                  <option value="Beidou">Beidou</option>
+                  <option value="Bennett">Bennett</option>
+                  <option value="Chongyun">Chongyun</option>
+                  <option value="Diona">Diona</option>
+                  <option value="Eula">Eula</option>
+                  <option value="Fischl">Fischl</option>
+                  <option value="Ganyu">Ganyu</option>
+                  <option value="HuTao">HuTao</option>
+                  <option value="Jean">Jean</option>
+                  <option value="Kaeya">Kaeya</option>
+                  <option value="Keqing">Keqing</option>
+                  <option value="Klee">Klee</option>
+                  <option value="Lisa">Lisa</option>
+                  <option value="Mona">Mona</option>
+                  <option value="Ningguang">Ningguang</option>
+                  <option value="Noelle">Noelle</option>
+                  <option value="Qiqi">Qiqi</option>
+                  <option value="Razor">Razor</option>
+                  <option value="Rosaria">Rosaria</option>
+                  <option value="Sucrose">Sucrose</option>
+                  <option value="Tartaglia">Tartaglia</option>
+                  <option value="Venti">Venti</option>
+                  <option value="Xiangling">Xiangling</option>
+                  <option value="Xiao">Xiao</option>
+                  <option value="Xingqiu">Xingqiu</option>
+                  <option value="Xinyan">Xinyan</option>
+                  <option value="Yanfei">Yanfei</option>
+                  <option value="Zhongli">Zhongli</option>
                 </select>
               </div>
             </div>
           </div>
-          <div class="columns">
+          <div class="columns artifactsFields">
             <div class="column is-2">
               <label>Flower</label>
               <div class="select is-normal">
                 <select v-model="flower">
-                  <option>Gladiator's Finale</option>
-                  <option>Viridescent Venerer</option>
-                  <option>Noblesse Oblige</option>
-                  <option>Bloodstained Chivalry</option>
-                  <option>Pale Flame</option>
-                  <option>Thundering Fury</option>
+                  <option value="gladiator">Gladiator's Finale</option>
+                  <option value="thundering">Thundering Fury</option>
+                  <option value="noblesse">Noblesse Oblige</option>
+                  <option value="chivalry">Bloodstained Chivalry</option>
+                  <option value="crimson">Crimson Witch of Flames</option>
                 </select>
               </div>
             </div>
@@ -73,12 +177,11 @@
               <label>Plume</label>
               <div class="select is-normal">
                 <select v-model="feather">
-                  <option>Gladiator's Finale</option>
-                  <option>Viridescent Venerer</option>
-                  <option>Noblesse Oblige</option>
-                  <option>Bloodstained Chivalry</option>
-                  <option>Pale Flame</option>
-                  <option>Thundering Fury</option>
+                  <option value="gladiator">Gladiator's Finale</option>
+                  <option value="thundering">Thundering Fury</option>
+                  <option value="noblesse">Noblesse Oblige</option>
+                  <option value="chivalry">Bloodstained Chivalry</option>
+                  <option value="crimson">Crimson Witch of Flames</option>
                 </select>
               </div>
             </div>
@@ -86,12 +189,11 @@
               <label>Hourglass</label>
               <div class="select is-normal">
                 <select v-model="hourglass">
-                  <option>Gladiator's Finale</option>
-                  <option>Viridescent Venerer</option>
-                  <option>Noblesse Oblige</option>
-                  <option>Bloodstained Chivalry</option>
-                  <option>Pale Flame</option>
-                  <option>Thundering Fury</option>
+                  <option value="gladiator">Gladiator's Finale</option>
+                  <option value="thundering">Thundering Fury</option>
+                  <option value="noblesse">Noblesse Oblige</option>
+                  <option value="chivalry">Bloodstained Chivalry</option>
+                  <option value="crimson">Crimson Witch of Flames</option>
                 </select>
               </div>
             </div>
@@ -99,12 +201,11 @@
               <label>Goblet</label>
               <div class="select is-normal">
                 <select v-model="goblet">
-                  <option>Gladiator's Finale</option>
-                  <option>Viridescent Venerer</option>
-                  <option>Noblesse Oblige</option>
-                  <option>Bloodstained Chivalry</option>
-                  <option>Pale Flame</option>
-                  <option>Thundering Fury</option>
+                  <option value="gladiator">Gladiator's Finale</option>
+                  <option value="thundering">Thundering Fury</option>
+                  <option value="noblesse">Noblesse Oblige</option>
+                  <option value="chivalry">Bloodstained Chivalry</option>
+                  <option value="crimson">Crimson Witch of Flames</option>
                 </select>
               </div>
             </div>
@@ -112,12 +213,11 @@
               <label>Crown</label>
               <div class="select is-normal">
                 <select v-model="crown">
-                  <option>Gladiator's Finale</option>
-                  <option>Viridescent Venerer</option>
-                  <option>Noblesse Oblige</option>
-                  <option>Bloodstained Chivalry</option>
-                  <option>Pale Flame</option>
-                  <option>Thundering Fury</option>
+                  <option value="gladiator">Gladiator's Finale</option>
+                  <option value="thundering">Thundering Fury</option>
+                  <option value="noblesse">Noblesse Oblige</option>
+                  <option value="chivalry">Bloodstained Chivalry</option>
+                  <option value="crimson">Crimson Witch of Flames</option>
                 </select>
               </div>
             </div>
@@ -195,7 +295,7 @@ data(){
   margin-left: auto;
   margin-right: auto;
 }
-.columns{
+.characterFields, .artifactsFields{
   justify-content: space-between;
 }
 .input{

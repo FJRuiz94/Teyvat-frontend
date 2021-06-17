@@ -152,6 +152,9 @@ p{
 .charactersContainer{
   height: auto;
 }
+.charactersContainer .container .columns{
+  justify-content: unset;
+}
 }
 
 </style>

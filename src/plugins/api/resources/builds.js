@@ -6,8 +6,9 @@ class Build {
   async list() {
       try {
           const response = await this.axios.get("builds");
-
+            console.log(response)
           return response.data
+
       } catch (error) {
           throw error
       }

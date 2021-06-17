@@ -1,5 +1,11 @@
 <template>
-<div :class="elementType" >
+<div :class="{pyro: name.element === 'Pyro', 
+              hydro: name.element === 'Hydro', 
+              electro: name.element === 'Electro',
+              anemo: name.element === 'Anemo',
+              cryo: name.element === 'Cryo',
+              geo: name.element === 'Geo'
+              }">
   <header>
     <div class="columns">
       <div class="column">
@@ -79,7 +85,7 @@ export default {
       sentence: "",
       element: "",
       lore: "",
-      elementType: 'dynamic-type'
+      elementType: ''
     }
   },
   mounted(){
@@ -96,16 +102,31 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 
 
-.dynamic-type{
+/* .dynamic-type{
   background-color:rgba(0, 0, 0, 0.11);
+} */
+
+.pyro{
+  background: linear-gradient(180deg, rgba(163,0,0,1) 0%, rgba(255,0,0,0.8015581232492998) 78%);
 }
 
-.fuego{
-background-color: red;
+.hydro{
+  background: rgb(38 99 170);
 }
 
-.agua{
-  background-color: blue;
+.cryo{
+  background: rgba(58, 199, 166, 0.73);
+}
+.anemo{
+  background: rgb(103, 223, 85);
+}
+
+.electro{
+  background: rgba(158,0,255,0.6278886554621849);
+}
+
+.geo{
+  background: rgb(204 162 62);
 }
 
 header{
@@ -128,11 +149,11 @@ header{
 h1{
   font-family: 'Crimson Text', serif;
   font-size: 5rem;
-  color:black;
+  color:white;
 }
 h4{
   font-size:1.5rem;
-  color:black;
+  color:white;
 }
 .lore{
   height:90vh;
@@ -144,7 +165,7 @@ h4{
   padding-left: 20%;
   padding-right: 20%;
   font-style: italic;
-  color: black;
+  color: white;
 }
 .loreDesc{
   padding-left: 5vw;
@@ -152,7 +173,7 @@ h4{
 }
 .loreDesc p{
   font-size: 1.4rem;
-  color: black;
+  color: white;
 }
 .loreImg{
   height: 70vh;
@@ -186,12 +207,12 @@ h4{
 .abilityName{
   text-align: center;
   font-size:1.5rem;
-  color:black;
+  color:white;
 }
 .abilityDesc{
   margin-left: auto;
   margin-right: auto;
-  color: black;
+  color: white;
 }
 
 @media(max-width: 480px){

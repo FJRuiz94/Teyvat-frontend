@@ -1,5 +1,5 @@
 <template>
-<div :style="{'background-image':'url(img/genshinFondo.jpg)', 'background-size': 'cover'}">
+<div class="allBuilds" :style="{'background-image':'url(img/genshinFondo.jpg)', 'background-size': 'cover'}">
 <div class="builds-container" >
   <div class="btn-container">
     <router-link to='/builds/newBuild'>
@@ -36,6 +36,9 @@ components: {
 </script>
 
 <style>
+.allBuilds{
+  height: 100%;
+}
 .builds-container{
   height:90vh;
   width:75vw;
