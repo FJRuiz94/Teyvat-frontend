@@ -127,4 +127,27 @@ h2{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media(max-width: 480px){
+  .regions .columns{
+    display: flex;
+    flex-direction: column;
+  }
+  .region-info img{
+    height: 200px;
+  }
+  .columns{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .region-logo img{
+    height: 150px;
+  }
+  .bg{
+    padding: 5%;
+  }
+  .monds-section p, .liyue-section p{
+    font-size: 14px;
+  }
+}
 </style>

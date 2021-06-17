@@ -2,14 +2,14 @@
 
 <div class="charactersContainer" :style="{'background-image':'url(img/bg-characters.jpg)', 'background-size': 'cover','background-color': 'rgba(0, 0, 0, 0.116)'}">
 <div class="container is-fullhd">
-  <div class="btn-container">
+  <!-- <div class="btn-container">
       <button class="button" @click="currentRarity = 5" :class="{ active: currentRarity === 5 }">
         5 &#9733;
         </button>
       <button class="button" @click="currentRarity = 4" :class="{ active: currentRarity === 4 }"> 
       4 &#9733;
       </button>
-  </div>
+  </div> -->
 
   <div class="element-container">
     <button class="button is-large" @click="currentElement = null" :class="{ active: currentElement === null }">
@@ -139,15 +139,19 @@ p{
   margin-top: 0;
   padding: 15px;
   }
-  .column{
-    display: inline-block;
-    padding: 0;
-  }
-  .button{
-    font-size:1.2rem;
-  }
-  .element{
-    height:35px;
-  }
+.column{
+  display: inline-block;
+  padding: 0;
 }
+.button{
+  font-size:1.2rem;
+}
+.element{
+  height:35px;
+}
+.charactersContainer{
+  height: auto;
+}
+}
+
 </style>

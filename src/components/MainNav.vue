@@ -119,4 +119,23 @@ export default {
 .navbar-burger span{
   left: calc(50% - -20px);
 }
+@media(max-width: 480px){
+  .navbar-burger{
+    right: 50px;
+  }
+  .navbar-start{
+    margin-top:30px;
+  }
+  .navbar-start a{
+    color: black;
+  }
+  .navbar-menu .is-active{
+    height: 25vh;
+    width: 35vw;
+  }
+  .navbar-burger span{
+    height: 2px;
+    width: 20px;
+  }
+}
 </style>

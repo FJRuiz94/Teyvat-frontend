@@ -1,5 +1,5 @@
 <template>
-<div :class="elementType">
+<div :class="elementType" >
   <header>
     <div class="columns">
       <div class="column">
@@ -78,6 +78,7 @@ export default {
       img: "",
       sentence: "",
       element: "",
+      lore: "",
       elementType: 'dynamic-type'
     }
   },
@@ -213,13 +214,14 @@ h4{
     font-size: 1rem;
     padding-left: 2%;
     padding-right: 2%;
+    text-align: left;
   }
   .loreDesc{
     padding-top: 0;
     padding-left: 0;
   }
   .loreDesc p{
-    font-size:0.8rem;
+    font-size:15px;
     padding: 5%;
   }
   .loreImg{

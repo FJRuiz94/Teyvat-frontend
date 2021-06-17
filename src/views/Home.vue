@@ -23,27 +23,30 @@
       <h1>DISCOVER TEYVAT</h1>
       <div class="columns">
         <div class="column is-half column-txt">
-          <p>Lorem fistrum la caidita la caidita te va a hasé pupitaa sexuarl se calle ustée benemeritaar. A gramenawer no puedor diodeno torpedo. Tiene musho peligro de la pradera benemeritaar tiene musho peligro ese que llega tiene musho peligro ese pedazo de se calle ustée a wan papaar papaar tiene musho peligro. Diodeno mamaar la caidita ahorarr benemeritaar por la gloria de mi madre pupita. Llevame al sircoo qué dise usteer ese hombree se calle ustée. Papaar papaar mamaar ese que llega quietooor apetecan está la cosa muy malar. Fistro va usté muy cargadoo por la gloria de mi madre quietooor ese hombree. A peich te voy a borrar el cerito jarl caballo blanco caballo negroorl benemeritaar por la gloria de mi madre me cago en tus muelas tiene musho peligro de la pradera fistro no te digo trigo por no llamarte Rodrigor. Por la gloria de mi madre condemor la caidita te va a hasé pupitaa de la pradera mamaar papaar papaar.</p>
+          <p>You have reached Teyvat, a fantasy world where the seven elements flow and converge.
+
+          In the distant past, the Archons gave unique elemental abilities to the mortals. With the help of such powers, the people formed an abundant homeland in the desert. However, 500 years ago, the collapse of an ancient civilization turned the universe upside down ...
+
+          Although the calamity the world suffered has ceased, peace has not yet been restored.</p>
         </div>
         <div class="column">
-          <a href="/world">
             <figure class="column-monds">
-            <img src="img/Emblema_Mondstadt.png" width="200" height="200" alt="">
+              <a href="/world">
+                <img src="img/Emblema_Mondstadt.png" width="200" height="200" alt="">
+              </a>
           </figure>
-          </a>
         </div>
         <div class="column">
-          <a href="/world">
             <figure class="column-liyue">
-            <img src="img/Emblema_Liyue.png" width="200" height="200" alt="">
+              <a href="/world">
+                <img src="img/Emblema_Liyue.png" width="200" height="200" alt="">
+              </a>
           </figure>
-          </a>
         </div>
       </div>
     </section>
-    
     <section class="characters" :style="{'background-image':'url(img/bg-liyue.jpg)'}">
-    <h1>FORM YOUR TEAM</h1>
+    <h1>MEET THEIR CHARACTERS</h1>
     <div class="columns">
       <div class="column is-one-third column-left">
         <figure>
@@ -51,7 +54,7 @@
         </figure>
       </div>
       <div class="column">
-        <p>Lorem fistrum la caidita la caidita te va a hasé pupitaa sexuarl se calle ustée benemeritaar. A gramenawer no puedor diodeno torpedo. Tiene musho peligro de la pradera benemeritaar tiene musho peligro ese que llega tiene musho peligro ese pedazo de se calle ustée a wan papaar papaar tiene musho peligro. Diodeno mamaar la caidita ahorarr benemeritaar por la gloria de mi madre pupita. </p>
+        <p>Get to know the most powerful and interesting characters from across the continent of Teyvat in depth. Discover their stories and curiosities, and take a look at their incredible abilities! </p>
       </div>
       <div class="column column-right">
           <img src="img/characters/hu-tao/hu_tao1.png" alt="hu-tao">
@@ -62,7 +65,7 @@
       <h1>CREATE YOUR BUILDS</h1>
       <div class="columns">
         <div class="column is-half builds-txt">
-          <p>Lorem fistrum la caidita la caidita te va a hasé pupitaa sexuarl se calle ustée benemeritaar. A gramenawer no puedor diodeno torpedo. Tiene musho peligro de la pradera benemeritaar tiene musho peligro ese que llega tiene musho peligro ese pedazo de se calle ustée a wan papaar papaar tiene musho peligro. Diodeno mamaar la caidita ahorarr benemeritaar por la gloria de mi madre pupita. Lorem fistrum la caidita la caidita te va a hasé pupitaa sexuarl se calle ustée benemeritaar. A gramenawer no puedor diodeno torpedo. Tiene musho peligro de la pradera benemeritaar tiene musho peligro ese que llega tiene musho peligro ese pedazo de se calle ustée a wan papaar papaar tiene musho peligro. Diodeno mamaar la caidita ahorarr benemeritaar por la gloria de mi madre pupita.</p>
+          <p>Equip your characters with powerful artifacts that will turn the tide of combat. Make various combinations to discover the one that best suits your character or the way you play. Or try crazy combinations that no one in their right mind would try, but please, do NOT waste your time building Amber.</p>
         </div>
         <div class="column column-artifacts">
             <div class="columns artifacts is-multiline">
@@ -106,6 +109,9 @@ export default {
 header{
   height:100vh;
   background-color:#aaf6ab;
+}
+p{
+  font-size: 25px;
 }
 .column-image{
   height: 100vh;
@@ -205,7 +211,7 @@ header{
 
 @media (max-width: 480px){
   .header-txt{
-    margin-top: 5vh;
+    margin-top: 1vh;
     margin-left: 2vh;
     padding:5px
   }
@@ -213,7 +219,7 @@ header{
     margin-top: 5vh;
   }
   .column-image{
-    height: 50vh;
+    height: 35vh;
   }
   .column-txt{
     display: none;
@@ -242,15 +248,33 @@ header{
   .column-right{
     justify-content: center;
   }
+  .characters{
+    height: 85vh;
+  }
   .column-right img{
     height: 45vh;
   }
+  .characters h1{
+    padding-top: 3vh;
+  }
+  .characters p{
+    font-size: 18px;
+    text-align: left;
+    padding: 10px;
+  }
+  .builds{
+    height: 80vh;
+  }
+  .builds h1{
+    padding-top: 3vh;
+  }
   .builds-txt{
-    height: 45vh;
+    height: 30vh;
     padding: 5%;
+    align-items: unset;
   }
   .builds-txt p{
-    font-size: 15px;
+    font-size: 16px;
   }
   .artifacts .column{
   display: inline-block;

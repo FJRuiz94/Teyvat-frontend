@@ -13,11 +13,11 @@
         <div class="column column-artifacts">
           <div class="build-content">
             <div class="artifacts-container">
-              <p>{{value.flower}}</p>
-              <p>{{value.feather}}</p>
-              <p>{{value.hourglass}}</p>
-              <p>{{value.goblet}}</p>
-              <p>{{value.crown}}</p>
+              <p>Flower: {{value.flower}}</p>
+              <p> Plume: {{value.feather}}</p>
+              <p>Hourglass: {{value.hourglass}}</p>
+              <p>Goblet: {{value.goblet}}</p>
+              <p>Crown: {{value.crown}}</p>
               <!-- <img :src="value.flower">
               <img :src="value.feather">
               <img :src="value.hourglass">

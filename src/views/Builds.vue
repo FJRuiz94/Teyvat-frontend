@@ -38,7 +38,7 @@ components: {
 <style>
 .builds-container{
   height:90vh;
-  width:50vw;
+  width:75vw;
   margin-left: auto;
   margin-right: auto;
 }
