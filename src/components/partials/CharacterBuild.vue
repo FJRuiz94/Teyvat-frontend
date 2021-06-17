@@ -3,7 +3,7 @@
       <div class="columns">
         <div class="column">
           <div class="cardMain">
-            <a :href="'/builds/' + value.title">
+            <a :href="'/inConstruction'">
               <h2><b>{{value.title}}</b></h2>
               <p>{{value.main}}</p>
             <!-- <img :src="value.main" alt=""> -->
